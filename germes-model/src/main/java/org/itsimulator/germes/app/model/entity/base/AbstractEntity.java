@@ -6,7 +6,7 @@ import org.itsimulator.germes.app.model.entity.person.Account;
 
 /**
  * Base class for all business entities
- * @author admin
+ * @author Morenets
  *
  */
 public abstract class AbstractEntity {

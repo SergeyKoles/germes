@@ -3,7 +3,7 @@ package org.itsimulator.germes.app.model.entity.geography;
 /**
  * Value type that stores address attributes
  * of the specific office or person 
- * @author admin
+ * @author Morenets
  *
  */
 public class Address {
