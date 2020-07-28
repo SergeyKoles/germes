@@ -11,4 +11,4 @@ target/
 /.project
 /.settings
 *.iml
-/germes-model/src/main/java/.gitkeep
+.gitkeep
