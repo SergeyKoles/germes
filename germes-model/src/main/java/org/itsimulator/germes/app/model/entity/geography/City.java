@@ -1,12 +1,12 @@
 package org.itsimulator.germes.app.model.entity.geography;
 
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
-
 import org.itsimulator.germes.app.infra.util.CommonUtil;
 import org.itsimulator.germes.app.model.entity.base.AbstractEntity;
 import org.itsimulator.germes.app.model.entity.transport.TransportType;
+
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 /**
  * Any locality that contains transport stations

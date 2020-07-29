@@ -4,9 +4,9 @@ import org.itsimulator.germes.app.model.entity.base.AbstractEntity;
 
 /**
  * Entity that encapsulates user of the application
- * @author Morenets
  *
+ * @author Morenets
  */
-public class Account extends AbstractEntity{
+public class Account extends AbstractEntity {
 
 }

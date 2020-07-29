@@ -2,6 +2,8 @@ package org.itsimulator.germes.app.model.search.criteria;
 
 import org.itsimulator.germes.app.model.entity.transport.TransportType;
 
+import java.util.Objects;
+
 /**
  * Filtering criteria for search stations operation
  *
@@ -20,6 +22,17 @@ public class StationCriteria {
    */
   private String address;
 
+  public StationCriteria() {
+  }
+
+  private StationCriteria(final String name) {
+    this.name = Objects.requireNonNull(name);
+  }
+
+  public StationCriteria(final TransportType transportType) {
+    this.transportType = Objects.requireNonNull(transportType);
+  }
+
   /**
    * Returns filtering criteria to search stations that
    * contains specified name parameter
@@ -29,17 +42,6 @@ public class StationCriteria {
    */
   public static StationCriteria byName(String name) {
     return new StationCriteria(name);
-  }
-
-  public StationCriteria() {
-  }
-
-  private StationCriteria(final String name) {
-    this.name = name;
-  }
-
-  public StationCriteria(final TransportType transportType) {
-    this.transportType = transportType;
   }
 
   public String getName() {

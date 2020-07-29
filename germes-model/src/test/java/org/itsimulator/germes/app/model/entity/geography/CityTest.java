@@ -4,7 +4,8 @@ import org.itsimulator.germes.app.model.entity.transport.TransportType;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Contains unit-tests to check functionality of {@link City} class

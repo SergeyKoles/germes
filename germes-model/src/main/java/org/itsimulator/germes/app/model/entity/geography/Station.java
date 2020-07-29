@@ -1,9 +1,9 @@
 package org.itsimulator.germes.app.model.entity.geography;
 
-import java.util.Objects;
-
 import org.itsimulator.germes.app.model.entity.base.AbstractEntity;
 import org.itsimulator.germes.app.model.entity.transport.TransportType;
+
+import java.util.Objects;
 
 /**
  * Station where passengers can get off or take specific kind
