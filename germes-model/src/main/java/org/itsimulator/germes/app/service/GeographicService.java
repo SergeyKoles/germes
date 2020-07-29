@@ -1,8 +1,8 @@
 package org.itsimulator.germes.app.service;
 
-import java.util.List;
-
 import org.itsimulator.germes.app.model.entity.geography.City;
+
+import java.util.List;
 
 /**
  * Entry point to perform operations

@@ -1,11 +1,11 @@
 package org.itsimulator.germes.app.service.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.itsimulator.germes.app.infra.util.CommonUtil;
 import org.itsimulator.germes.app.model.entity.geography.City;
 import org.itsimulator.germes.app.service.GeographicService;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Default implementation of the {@link GeographicService}
