@@ -29,7 +29,7 @@ public class City extends AbstractEntity {
 
   /**
    * Set of transport stations that is linked to this
-   * loyality
+   * locality
    */
   private Set<Station> stations;
 

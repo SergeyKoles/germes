@@ -7,6 +7,6 @@ package org.itsimulator.germes.app.model.entity.transport;
  * @author Morenets
  */
 public enum TransportType {
-  AUTO /*For example, bus*/, RAILWAY /* For example, train*/, AVIA /*For example, plain*/;
+  AUTO /*For example, bus*/, RAILWAY /* For example, train*/, AVIA /*For example, plane*/;
 
 }
