@@ -9,6 +9,14 @@
     <artifactId>germes-presentation</artifactId>
     <packaging>war</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.it-simulator</groupId>
+            <artifactId>germes-service</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
