@@ -38,7 +38,8 @@ public class SimpleDTOTransformer implements Transformer {
   }
 
   private void checkParams(final Object param, final Class<?> clz) {
-    Checks.checkParameter(param != null, "Source transformation object is not initialized");
+    Checks.checkParameter(param != null,
+            "Source transformation object is not initialized");
     Checks.checkParameter(clz != null,
             "No class is defined for transformation");
   }

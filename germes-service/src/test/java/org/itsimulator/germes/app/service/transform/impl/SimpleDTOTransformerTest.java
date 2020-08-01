@@ -7,8 +7,7 @@ import org.itsimulator.germes.app.service.transform.Transformer;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 /**
  * Verifies functionality of the {@link SimpleDTOTransformer}

@@ -7,8 +7,7 @@ import org.junit.Test;
 import javax.ws.rs.core.Application;
 import java.util.List;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * {@link CityResourceTest} is integration test that verifies
