@@ -18,6 +18,7 @@
         <jersey.version>2.19</jersey.version>
         <log4j.version>2.3</log4j.version>
         <powermock.version>1.6.4</powermock.version>
+        <jmockit.version>1.21</jmockit.version>
     </properties>
 
     <dependencies>
