@@ -1,6 +1,25 @@
-apply plugin: 'war'
+plugins {
+    id "com.bmuschko.tomcat" version "2.2.4"
+}
 
-description = ''
+apply plugin: 'war'
+apply plugin: 'jetty'
+
 dependencies {
     compile project(':germes-service')
+}
+
+dependencies {
+    def tomcatVersion = '7.0.67'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+}
+
+tomcat {
+    contextPath = '/'
+}
+
+jettyRun {
+    contextPath = ''
 }

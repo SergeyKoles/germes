@@ -1,1 +1,3 @@
-description = ''
+dependencies {
+    compile project(':germes-model')
+}
