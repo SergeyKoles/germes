@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * In-memory implementation of the {@link CityRepository} that stores
- * data in the RAM
+ * In-memory implementation of the {@link CityRepository} that stores data in
+ * the RAM
  *
  * @author Morenets
  */
@@ -55,6 +55,16 @@ public class InMemoryCityRepository implements CityRepository {
   @Override
   public City findById(final int id) {
     return cities.stream().filter(city -> city.getId() == id).findFirst().orElse(null);
+  }
+
+  @Override
+  public void deleteAll() {
+    cities.clear();
+  }
+
+  @Override
+  public void saveAll(List<City> cities) {
+    cities.forEach(this::save);
   }
 
 }

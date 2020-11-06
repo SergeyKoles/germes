@@ -9,17 +9,20 @@ import javax.persistence.*;
 import java.util.Objects;
 
 /**
- * Station where passengers can get off or take specific kind
- * of transport. Multiple stationts compose route of the trip.
+ * Station where passengers can get off or take specific kind of transport.
+ * Multiple stationts compose route of the trip.
  *
  * @author Morenets
  */
 @Table(name = "STATION")
 @Entity
+@NamedQuery(name = Station.QUERY_DELETE_ALL, query = "delete from Station")
 public class Station extends AbstractEntity {
   public static final String FIELD_TRANSPORT_TYPE = "transportType";
 
   public static final String FIELD_CITY = "city";
+
+  public static final String QUERY_DELETE_ALL = "deleteStations";
 
   private City city;
 
@@ -38,8 +41,8 @@ public class Station extends AbstractEntity {
   }
 
   /**
-   * You shouldn't create station object directly. Use
-   * {@link City} functionality instead
+   * You shouldn't create station object directly. Use {@link City}
+   * functionality instead
    *
    * @param city
    * @param transportType
@@ -153,6 +156,5 @@ public class Station extends AbstractEntity {
       return false;
     return true;
   }
-
 
 }

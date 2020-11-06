@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.it-simulator</groupId>
         <artifactId>germes</artifactId>
-        <version>0.4.1</version>
+        <version>0.4.9</version>
     </parent>
     <artifactId>germes-persistence</artifactId>
 
@@ -22,6 +22,11 @@
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
             <artifactId>hibernate-java8</artifactId>
             <version>${hibernate.version}</version>
             <scope>runtime</scope>
@@ -35,6 +40,11 @@
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
             <version>0.9.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>2.4.6</version>
         </dependency>
     </dependencies>
 </project>

@@ -34,8 +34,10 @@ public class SessionFactoryBuilder {
     Set<Class<?>> entityClasses = reflections.getTypesAnnotatedWith(Entity.class);
     entityClasses.forEach(sources::addAnnotatedClass);
 
-    org.hibernate.boot.SessionFactoryBuilder builder = sources.getMetadataBuilder().build().
-            getSessionFactoryBuilder().applyInterceptor(new TimestampInterceptor());
+    org.hibernate.boot.SessionFactoryBuilder builder = sources.getMetadataBuilder()
+            .build()
+            .getSessionFactoryBuilder()
+            .applyInterceptor(new TimestampInterceptor());
 
     sessionFactory = builder.build();
   }

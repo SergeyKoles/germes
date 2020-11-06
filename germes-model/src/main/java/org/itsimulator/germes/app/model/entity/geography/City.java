@@ -5,6 +5,8 @@ import org.itsimulator.germes.app.model.entity.base.AbstractEntity;
 import org.itsimulator.germes.app.model.entity.transport.TransportType;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -16,8 +18,11 @@ import java.util.Set;
  */
 @Table(name = "CITY")
 @Entity
+@NamedQuery(name = City.QUERY_DELETE_ALL, query = "delete from City")
 public class City extends AbstractEntity {
   public static final String FIELD_NAME = "name";
+
+  public static final String QUERY_DELETE_ALL = "deleteCities";
 
   private String name;
 
@@ -44,6 +49,8 @@ public class City extends AbstractEntity {
     this.name = name;
   }
 
+  @NotNull
+  @Size(min = 2, max = 32)
   @Column(name = "NAME", nullable = false, length = 32)
   public String getName() {
     return name;
@@ -53,6 +60,8 @@ public class City extends AbstractEntity {
     this.name = name;
   }
 
+  @NotNull
+  @Size(min = 2, max = 32)
   @Column(name = "DISTRICT", nullable = false, length = 32)
   public String getDistrict() {
     return district;
@@ -62,6 +71,8 @@ public class City extends AbstractEntity {
     this.district = district;
   }
 
+  @NotNull
+  @Size(min = 2, max = 32)
   @Column(name = "REGION", nullable = false, length = 32)
   public String getRegion() {
     return region;
